@@ -7,7 +7,7 @@ Código da aula 1 de CoreData com Swift para iTunes U do Instituto Federal do Ce
 
 # Como rodar
 
-1. Faça o git clone do projeto ```$ git clone https://github.com/lucasecf/alamofiredemo-cocoapods.git```
+1. Faça o git clone do projeto ```$ git clone https://github.com/ajalmar/coredata_aula1.git```
 2. Termine a implementação do projeto, de acordo com a primeira video aula sobre CoreData.
 
 # Resolução
