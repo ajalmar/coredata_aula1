@@ -18,6 +18,8 @@
 		204B4D331ABB643E005AEB6C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B4D321ABB643E005AEB6C /* DetailViewController.swift */; };
 		204B4D351ABB6B29005AEB6C /* FetchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B4D341ABB6B29005AEB6C /* FetchTableViewCell.swift */; };
 		20EDE6251B13ACEE00A488BD /* WriteDataBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDE6241B13ACEE00A488BD /* WriteDataBack.swift */; };
+		20F910A51B0FD01000F9F889 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F910A41B0FD01000F9F889 /* Car.swift */; };
+		20F910A71B0FD03D00F9F889 /* Car+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F910A61B0FD03D00F9F889 /* Car+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		204B4D321ABB643E005AEB6C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		204B4D341ABB6B29005AEB6C /* FetchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchTableViewCell.swift; sourceTree = "<group>"; };
 		20EDE6241B13ACEE00A488BD /* WriteDataBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteDataBack.swift; sourceTree = "<group>"; };
+		20F910A41B0FD01000F9F889 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		20F910A61B0FD03D00F9F889 /* Car+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Car+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				204B4D0B1ABB61A7005AEB6C /* AppDelegate.swift */,
 				204B4D301ABB62DF005AEB6C /* RootViewController.swift */,
 				204B4D321ABB643E005AEB6C /* DetailViewController.swift */,
+				20F910A41B0FD01000F9F889 /* Car.swift */,
+				20F910A61B0FD03D00F9F889 /* Car+Utils.swift */,
 				20EDE6241B13ACEE00A488BD /* WriteDataBack.swift */,
 				204B4D121ABB61A7005AEB6C /* Main.storyboard */,
 				204B4D151ABB61A7005AEB6C /* Images.xcassets */,
@@ -229,7 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20EDE6251B13ACEE00A488BD /* WriteDataBack.swift in Sources */,
+				20F910A51B0FD01000F9F889 /* Car.swift in Sources */,
 				204B4D351ABB6B29005AEB6C /* FetchTableViewCell.swift in Sources */,
+				20F910A71B0FD03D00F9F889 /* Car+Utils.swift in Sources */,
 				204B4D0F1ABB61A7005AEB6C /* Aula1CRUD.xcdatamodeld in Sources */,
 				204B4D331ABB643E005AEB6C /* DetailViewController.swift in Sources */,
 				204B4D0C1ABB61A7005AEB6C /* AppDelegate.swift in Sources */,

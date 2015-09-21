@@ -10,10 +10,13 @@ import UIKit
 
 class RootViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, WriteDataBack {
         
-    
+    /*
     var cars = ["gol", "palio", "fiesta"]
     var carDetails = ["VW Gol 1.6", "Palio 1.6 16V", "Fiesta 1.0 4p"]
+    */
     
+    var cars = [String]()
+    var carDetails = [String]()
 
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -22,6 +25,12 @@ class RootViewController: UITableViewController, UITableViewDataSource, UITableV
 
         searchBar.delegate = self
         
+        var carsMO = Car.findAll()
+        
+        for carMO in carsMO {
+            cars.append(carMO.code)
+            carDetails.append(carMO.detail)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,6 +82,8 @@ class RootViewController: UITableViewController, UITableViewDataSource, UITableV
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             
+            var car = Car.findByCode(cars[indexPath.row])
+            car!.remove()
 
             cars.removeAtIndex(indexPath.row)
             carDetails.removeAtIndex(indexPath.row)
@@ -150,12 +161,20 @@ class RootViewController: UITableViewController, UITableViewDataSource, UITableV
         
         if index == -1 { // carro novo
             
-            cars.append(code)
-            carDetails.append(detail)
+            let inserted = Car.insert(code, detail: detail)
+            
+            if inserted {
+                cars.append(code)
+                carDetails.append(detail)
+            }
 
         } else { // atualizar carro
             
-            carDetails[index] = detail
+            var car = Car.findByCode(code) // busca o carro
+
+            if car!.update(code, detail: detail) {
+                carDetails[index] = detail
+            }
 
         }
         
@@ -167,6 +186,15 @@ class RootViewController: UITableViewController, UITableViewDataSource, UITableV
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
 
         
+        var theCars = Car.findByContent(searchText)
+        
+        cars = []
+        carDetails = []
+        
+        for car in theCars {
+            cars.append(car.code)
+            carDetails.append(car.detail)
+        }
         
         self.tableView.reloadData()
         
