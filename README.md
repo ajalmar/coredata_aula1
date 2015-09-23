@@ -2,7 +2,8 @@
 Código da aula 1 de CoreData com Swift para iTunes U do Instituto Federal do Ceará (IFCE).
 
 # Tecnologias
-* Xcode 6.4
+* iOS 8
+* Xcode 6.4 ([Baixe aqui](http://developer.apple.com/devcenter/download.action?path=/Developer_Tools/Xcode_6.4/Xcode_6.4.dmg))
 * Swift 1.2
 
 # Como rodar
